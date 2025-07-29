@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #eaf6ff 0%, #ffffff 100%);
+  color: #333;
+}
+
+.header {
+  background-color: #c2db34;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.nav a:hover,
+.nav .active {
+  color: #f1c40f;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #3498db;
+}
+
+.profile-card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.profile-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.profile-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.contact-form-section {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #2a7ab9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.profile-card .li-contact {
+  list-style: none;
+}

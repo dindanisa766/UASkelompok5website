@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="STYLE3.CSS" />
+    <link rel="stylesheet" href="STYLE4.CSS" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header role="banner" class="header">
+        <div class="container header-container">
+            <a href="indexgorontalo.html" class="brand">GorontaloWebsite</a>
+            <nav role="navigation" class="nav">
+                <a href="profilegorontalo.html" class="nav-link">Profile</a>
+                <a href="newsgotontalo.html" class="nav-link">News</a>
+                <a href="fotogorontalo.html" class="nav-link">Foto</a>
+                <a href="vidiogorontalo.html" class="nav-link">Video</a>
+                <a href="aboutgorontalo.html" class="nav-link">About</a>
+                <a href="contactgorontalo.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PROFIL -->
+        <section class="profiles fade-in">
+            <div class="profile-card">
+                <img src="foto/foto5.jpg" alt="Tejarahmawan">
+                <h2>Tejarahmawan</h2>
+                <ul>
+                    <li class="li-contact"><a href="https://wa.me/qr/35TQUCS5I4FHP1 ">📞wa</a></li>
+                    <li class="li-contact"><a
+                            href="https://www.instagram.com/tejarahmawan09?igsh=MTdtZXlhb3NpNmN0eA==">📷ig</a></li>
+                    <li class="li-contact"><a href="https://www.tiktok.com/@user605694924?_t=ZS-8yOafglykLg&_r=1">🎵
+                            tiktok</a></li>
+                </ul>
+            </div>
+            <div class="profile-card">
+                <img src="foto/foto2.jpg" alt="Safna Lia" />
+                <h2>Safna Lia</h2>
+                <ul>
+                    <li class="li-contact"><a href="https://wa.me/qr/35TQUCS5I4FHP1 ">📞wa</a></li>
+                    <li class="li-contact"><a
+                            href="https://www.instagram.com/sfnlia__?igsh=MWo0ZTZwdTV5bW9vNQ====">📷ig</a></li>
+                    <li class="li-contact"><a href="https://www.tiktok.com/@user605694924?_t=ZS-8yOafglykLg&_r=1">🎵
+                            tiktok</a></li>
+                </ul>
+            </div>
+            <div class="profile-card">
+                <img src="foto/foto4.jpg" alt="Dinda Nisa Nurul Aini" />
+                <h2>Dinda Nisa Nurul Aini</h2>
+                <li class="li-contact"><a href="https://wa.me/qr/35TQUCS5I4FHP1 ">📞wa</a></li>
+                <li class="li-contact"><a href="https://www.instagram.com/dndaaafz?igsh=dDc5bHlzYWxoN3g4">📷ig</a></li>
+                <li class="li-contact"><a href="https://www.tiktok.com/@lttlpinkieee">🎵 tiktok</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="contact-form-section fade-in">
+            <h2>Hubungi Kami</h2>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="nama" placeholder="Nama lengkap" required />
+                <input type="email" name="email" placeholder="Alamat Email" required />
+                <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <!-- GOOGLE MAPS -->
+        <section class="map-section fade-in">
+            <h2>Lokasi Kami</h2>
+            <h2 style="text-align:center; margin-top: 40px;">Temukan Kami di Peta</h2>
+            <p style="text-align:center; max-width:600px; margin:auto;">Kantor kami berada di wilayah Kotabumi,
+                Lampung Utara. Silakan kunjungi lokasi kami sesuai peta di bawah ini.</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63746.9432843279!2d104.8447427!3d-4.8243421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3ef77974e14b6b%3A0x3039d80b220c9e0!2sKotabumi%2C%20Kabupaten%20Lampung%20Utara%2C%20Lampung!5e0!3m2!1sid!2sid!4v1722179946924!5m2!1sid!2sid"
+                    width="100%" height="300"
+                    style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <h2>Hubungi Kami</h2>
+    <p>Silakan isi form di ATAS ini untuk mengirim pesan.</p>
+    <script>
+        // Animasi fade-in saat scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appear = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        faders.forEach(el => appear.observe(el));
+    </script>
+
+    <footer class="footer" role="contentinfo">
+    <div class="container footer-content">
+      <p>&copy; 2025 GorontaloWebsite. All rights reserved.</p>
+      <nav aria-label="social media">
+        <a href="https://www.tiktok.com/@infogorontalo?_t=ZS-8yOfyaO0UP1&_r=1" class="social-link" aria-label="Visit Ima Tiktok"><span class="material-icons-outlined">tiktok</span></a>
+        <a href="https://www.instagram.com/gtlo.karlota?igsh=anJwNXU1cjExaXJ2" class="social-link" aria-label="Visit Ima Instagram"><span class="material-icons-outlined">instagram</span></a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>
